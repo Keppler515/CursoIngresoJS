@@ -13,7 +13,12 @@ function mostrar()
 
  	//FUNCIONA PERO NO ESTA HECHO CON IF().	
 
-	alert(Math.floor(Math.random() * 11));	
+ 	var numeroAleatorio;
+ 		numeroAleatorio = Math.random();
+ 		numeroAleatorio = numeroAleatorio * 10 + 1;
+ 		numeroAleatorio = parseInt(numeroAleatorio);	
+
+	alert(numeroAleatorio);	
 
 
 

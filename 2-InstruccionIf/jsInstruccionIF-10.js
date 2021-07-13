@@ -13,19 +13,22 @@ function mostrar()
 {
 	var nota;
 	
-		nota = (Math.floor(Math.random() * 11));
+		nota = Math.random();
+		nota = nota * 10;
+		nota = parseInt(nota);
+		nota = nota + 1;
 
 	if (nota == 9 || nota == 10){
 		alert(nota + ': EXCELENTE');
 	}
 
-	if (nota >= 4 && nota <= 8){
+	else if (nota >= 4 || nota <= 8){
 		alert(nota + ': APROBÓ');
 	}
 
-	if (nota == 0 && nota <= 3){
-		alert(nota + ': Vamos, la próxima se puede');
-	}
+	else {
+		alert(nota + ': Vamos, la próxima se puede.');
+	} 
 
 
 }//FIN DE LA FUNCIÓN

@@ -15,6 +15,7 @@ function mostrar()
 
 		edad = document.getElementById('txtIdEdad').value;
 		estadoCivil = document.getElementById('estadoCivil').value; //SELECCIONO EL ID 'estadoCivil' PERO RECONOCE EL value DE UN ELEMENTO HIJO.
+		edad = parseInt(edad);
 		
 	if (edad < 18 && estadoCivil != 'Soltero'){
 		alert('Es muy pequeño para NO ser soltero.');
